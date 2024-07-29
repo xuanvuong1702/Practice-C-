@@ -6,11 +6,6 @@
 
 using namespace std;
 
-void print(std::string_view text, std::vector<int> const& v = {}) {
-    std::cout << text << ": ";
-    for (const auto& e : v) std::cout << e << ' ';
-    std::cout << '\n';
-}
 
 int TopKElement::findKthLargest(vector<int>& nums, int k){
 

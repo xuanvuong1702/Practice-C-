@@ -1,6 +1,7 @@
-#include <vector>
+
 #ifndef GREATER_ELEMENT_H
 #define GREATER_ELEMENT_H
+#include <vector>
 
 using namespace std;
 

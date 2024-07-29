@@ -13,36 +13,37 @@ void print(std::string_view text, std::vector<int> const& v = {}) {
 }
 
 vector<int> TopFrequent::topKFrequent(vector<int>& nums, int k){
-    map<int, int> mapTable;
+    map<int, int>* mapTable = new map<int, int>();
 
     int max = 0;
     for(auto i = 0;i<  nums.size();i++){
 
-        auto item = mapTable.find(nums[i]);
+        auto item = mapTable->find(nums[i]);
 
-        if(item != mapTable.end()){
+        if(item != mapTable->end()){
             item->second = item->second + 1;
         }
         else{
-            mapTable.insert(nums[i], 1);
+            mapTable->insert(pair<int, int>(nums[i], 1));
         }
     }
 
     //convert to vector
     vector<pair<int, int>> vt;
 
-    for(auto item  = mapTable.begin();item != mapTable.end();item++){
+    for(auto item  = mapTable->begin();item != mapTable->end();item++){
         vt.push_back(make_pair(item->first, item->second));
     }
 
-    make_heap(vt.begin(), vt.end(), compare);
+    make_heap(vt.begin(), vt.end(), PairCompare());
 
     int counter = k;
 
     vector<int> result;
 
     while(counter > 0){
-        pop_heap(vt.begin(), vt.end(), compare);
+
+        pop_heap(vt.begin(), vt.end(), PairCompare());
         result.push_back(vt.back().first);
         vt.pop_back();
         counter--;
