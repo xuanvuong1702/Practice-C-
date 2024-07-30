@@ -5,11 +5,13 @@
 #include "leetcode/LargesRectangle.h"
 #include "leetcode/TopKElement.h"
 #include "leetcode/TopFrequent.h"
+#include "leetcode/KPairSmallest.h"
+#include "leetcode/MergeInterval.h"
 
 
 int main(){
 
-    RunTopFrequent();
+    RunMergeInterval();
 
     return 0;
 }

@@ -17,7 +17,7 @@ struct PairElement{
 
 struct KPairSmallestCompare{
     static bool operator()(PairElement a, PairElement b){
-        return a.sum < b.sum;
+        return a.sum > b.sum;
     }
 };
 
@@ -27,5 +27,8 @@ class KPairSmallest {
 public:
     vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k);
 };
+
+
+void RunKPairSmallest();
 
 #endif
