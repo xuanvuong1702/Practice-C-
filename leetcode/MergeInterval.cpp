@@ -44,14 +44,42 @@ vector<vector<int>> MergeInterval::insert(vector<vector<int>>& intervals, vector
     return merge(intervals);    
 }
 
+
+int MergeInterval::eraseOverlapIntervals(vector<vector<int>>& intervals)
+{
+    vector<vector<int>> result;
+    sort(intervals.begin(), intervals.end(), MergeIntervalCompare());
+
+    for (int i = 0; i < intervals.size(); i++)
+    {
+        vector<int> current = intervals[i];
+
+        if (result.empty())
+        {
+            result.push_back(current);
+            continue;
+        }
+       
+        vector<int>& last = result.back();
+
+        if(current[0] < last[1]){
+            continue;
+        }
+        else{
+            result.push_back(current);
+        }
+    }
+
+    return intervals.size() - result.size();
+}
+
 void RunMergeInterval()
 {
     MergeInterval *sln = new MergeInterval();
 
-    vector<vector<int>> t1 = {{1,3},{6,9}};
-    vector<int> t2 = {2,5};
+    vector<vector<int>> t1 = {{1,2},{2,3},{3,4},{1,3}};
 
-    auto result = sln->insert(t1,t2);
+    auto result = sln->eraseOverlapIntervals(t1);
 
 
 }

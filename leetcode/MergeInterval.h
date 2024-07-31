@@ -18,6 +18,7 @@ class MergeInterval {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals);
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval);
+    int eraseOverlapIntervals(vector<vector<int>>& intervals);
 };
 
 
