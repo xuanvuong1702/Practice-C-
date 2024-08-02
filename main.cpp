@@ -7,11 +7,12 @@
 #include "leetcode/TopFrequent.h"
 #include "leetcode/KPairSmallest.h"
 #include "leetcode/MergeInterval.h"
+#include "leetcode/BinaryTree.h"
 
 
 int main(){
 
-    RunMergeInterval();
+    RunBinaryTree();
 
     return 0;
 }
