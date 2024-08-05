@@ -1,6 +1,7 @@
 #include "BinaryTree.h"
 #include <string>
 #include <iostream>
+#include <stack>
 
 using namespace std;
 
@@ -14,6 +15,25 @@ void BinaryTree::PreOrder(TreeNode *root)
     PreOrder(root->left);
 
     PreOrder(root->right);
+}
+
+void BinaryTree::PreOrderUStack(TreeNode *root)
+{
+    stack<pair<TreeNode*, string>> nodeStack;
+
+    nodeStack.push(pair<TreeNode*, string>(root, to_string(root->val)));
+    
+    while (!nodeStack.empty())
+    {
+       auto [node, path] = nodeStack.top();
+       nodeStack.pop();
+
+        cout << node->val << endl;
+
+        if(node->right != nullptr) nodeStack.push(pair<TreeNode*, string>(node->right, to_string(node->right->val)));
+        if(node->left != nullptr) nodeStack.push(pair<TreeNode*, string>(node->left, to_string(node->left->val)));
+
+    }
 }
 
 void BinaryTree::InOrder(TreeNode *root)
@@ -52,5 +72,5 @@ void RunBinaryTree()
 
     TreeNode *root = new TreeNode(1, node2, node3);
 
-    sln->PostOrder(root);
+    sln->PreOrderUStack(root);
 }

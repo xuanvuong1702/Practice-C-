@@ -22,6 +22,7 @@ public:
     void PreOrder(TreeNode* root);
     void InOrder(TreeNode* root);
     void PostOrder(TreeNode* root);
+    void PreOrderUStack(TreeNode* root);
 };
 
 void RunBinaryTree();
