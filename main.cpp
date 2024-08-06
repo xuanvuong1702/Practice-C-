@@ -10,17 +10,19 @@
 #include "leetcode/BinaryTree.h"
 #include "AIDD/Mock1.h"
 #include "ProgrammerKr/SortString.h"
+#include "AIDD/ChoseExecise.h"
 
 int main(){
 
-    RunSolutionSortString();
+    RunChoseExecise();
 
-    //10 + 25 + 28 - 89 
+    // string s = "1 10 1 10 1";
 
-    // n = 5, k= 2
-    // 2 4
-    // 1 2 3 4 5 
-    // 1 + 3 + 5 = 9
+    // int pos1 = s.find(" ");
+
+    // s.erase(1, 1 + 1);
+
+    // int pos2 = s.find(" ");
 
     return 0;
 }
