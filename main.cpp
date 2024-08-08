@@ -11,18 +11,11 @@
 #include "AIDD/Mock1.h"
 #include "ProgrammerKr/SortString.h"
 #include "AIDD/ChoseExecise.h"
+#include "codeforce/DpFibonacci.h"
 
 int main(){
 
-    RunChoseExecise();
-
-    // string s = "1 10 1 10 1";
-
-    // int pos1 = s.find(" ");
-
-    // s.erase(1, 1 + 1);
-
-    // int pos2 = s.find(" ");
+    int result = DpFibonacci(5);
 
     return 0;
 }

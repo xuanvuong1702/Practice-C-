@@ -5,5 +5,5 @@
 using namespace std;
 
 int CalculateGeun(int n, vector<int> items){
-
+	
 }

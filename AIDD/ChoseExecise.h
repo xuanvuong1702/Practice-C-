@@ -9,7 +9,8 @@
 
 using namespace std;
 
-vector<int> StringSplit(string s, string delimiter);
+   
+vector<int> StringSplitChoseExecise(string s, string delimiter);
 string ChoseExecise(int n, vector<int> items);
 void RunChoseExecise();
 

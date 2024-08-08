@@ -8,7 +8,7 @@
 
 using namespace std;
 
-vector<string> StringSplit(string s, string delimiter)
+vector<string> StringSplitChoseExecise(string s, string delimiter)
 {
     vector<string> result;
 
