@@ -13,10 +13,11 @@
 #include "AIDD/ChoseExecise.h"
 #include "codeforce/DpFibonacci.h"
 #include "leetcode/ClimbingStair.h"
+#include "leetcode/HouseRobber.h"
 
 int main(){
 
-    RunClimbingStair();
+    RunHouseRobber();
     return 0;
 }
 
