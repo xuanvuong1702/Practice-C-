@@ -15,5 +15,4 @@ string ChoseExecise(int n, vector<int> items);
 void RunChoseExecise();
 
 
-
 #endif

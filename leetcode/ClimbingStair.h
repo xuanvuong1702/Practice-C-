@@ -6,4 +6,6 @@ public:
     int climbStairs(int n);
 };
 
+void RunClimbingStair();
+
 #endif

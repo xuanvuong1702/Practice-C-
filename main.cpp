@@ -12,11 +12,11 @@
 #include "ProgrammerKr/SortString.h"
 #include "AIDD/ChoseExecise.h"
 #include "codeforce/DpFibonacci.h"
+#include "leetcode/ClimbingStair.h"
 
 int main(){
 
-    int result = DpFibonacci(5);
-
+    RunClimbingStair();
     return 0;
 }
 
