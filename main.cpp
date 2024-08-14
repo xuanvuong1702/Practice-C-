@@ -14,10 +14,17 @@
 #include "codeforce/DpFibonacci.h"
 #include "leetcode/ClimbingStair.h"
 #include "leetcode/HouseRobber.h"
+#include "leetcode-withAI/CoinChange.h"
+#include "leetcode-withAI/ChoosingAProblem.hpp"
+#include "test/ClassNS.hpp"
+
 
 int main(){
 
-    RunHouseRobber();
+    auto t = new ClassInNs::Home();
+
+    t->sayHello();
+
     return 0;
 }
 
