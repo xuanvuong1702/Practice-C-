@@ -1,0 +1,1 @@
+add_library(${CUSTOM_LIB_NAME} SHARED "CustomLib.cpp")

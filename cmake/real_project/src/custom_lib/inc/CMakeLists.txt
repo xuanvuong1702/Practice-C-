@@ -1,0 +1,1 @@
+target_include_directories(${CUSTOM_LIB_NAME} PUBLIC "./")

@@ -1,0 +1,1 @@
+add_library(${PRINTER_NAME} SHARED "Printer.cpp")
