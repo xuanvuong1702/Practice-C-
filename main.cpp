@@ -17,13 +17,11 @@
 #include "leetcode-withAI/CoinChange.h"
 #include "leetcode-withAI/ChoosingAProblem.hpp"
 #include "test/ClassNS.hpp"
-
+#include "leetcode-withAI/LargestRectangle.hpp"
 
 int main(){
 
-    auto t = new ClassInNs::Home();
-
-    t->sayHello();
+    LargestRectangleSolution::Run();
 
     return 0;
 }

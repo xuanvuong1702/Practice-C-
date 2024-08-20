@@ -3,7 +3,6 @@
 
 void printer(std::initializer_list<int> list)
 {
-
     for (std::initializer_list<int>::iterator i = list.begin();i!=list.end();i++)
     {
         std::cout << *i << std::endl;
