@@ -9,6 +9,7 @@
 #include "leetcode/MergeInterval.h"
 #include "leetcode/BinaryTree.h"
 #include "AIDD/Mock1.h"
+#include "AIDD/Round2Mock.h"
 #include "ProgrammerKr/SortString.h"
 #include "AIDD/ChoseExecise.h"
 #include "codeforce/DpFibonacci.h"
@@ -21,8 +22,8 @@
 
 int main(){
 
-    LargestRectangleSolution::Run();
-
+    //Round2Mock1::Solution();
+    Round2Mock::Solution7();
     return 0;
 }
 
