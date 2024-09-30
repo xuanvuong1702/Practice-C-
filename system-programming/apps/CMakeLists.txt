@@ -5,7 +5,6 @@ cmake_minimum_required(VERSION 3.11-3.18)
 project(main)
 
 add_executable(main main.c)
-# Chúng ta cần hello.h và thư viện hello
-target_link_libraries(main
-    PRIVATE string_and_struct)
 
+target_link_libraries(main
+    PRIVATE string_and_struct forking)

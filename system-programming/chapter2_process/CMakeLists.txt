@@ -2,4 +2,4 @@
 # vì vậy hãy yêu cầu nó ngay bây giờ.
 cmake_minimum_required(VERSION 3.11-3.18)
 
-add_subdirectory(string_and_struct)   # Tìm CMakeLists.txt trong thư mục con hello để xử lý
+add_subdirectory(forking)   # Tìm CMakeLists.txt trong thư mục con hello để xử lý

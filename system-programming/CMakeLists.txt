@@ -8,4 +8,5 @@ project(
     DESCRIPTION "System Programming code")
 
 add_subdirectory(chapter1_c_programming)   # Tìm CMakeLists.txt trong thư mục con chapter1_c_programming để xử lý
-add_subdirectory(apps) 
+add_subdirectory(chapter2_process)  # Tìm CMakeLists.txt trong thư mục con fork để xử lý
+add_subdirectory(apps)  # Tìm CMakeLists.txt trong thư mục con apps để xử lý
